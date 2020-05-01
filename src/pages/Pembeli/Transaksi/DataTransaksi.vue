@@ -10,7 +10,6 @@
         :loading="loading"
       >
         <template v-slot:top>
-          <q-btn color="teal" :disable="loading" label="Data Transaksi" to="/datatransaksi" />
           <q-space />
           <q-input borderless dense debounce="300" color="primary" v-model="filter">
             <template v-slot:append>
@@ -41,35 +40,43 @@ export default {
           sortable: true
         },
         { name: 'namaPembeli', align: 'center', label: 'Nama Pembeli', field: 'namaPembeli', sortable: true },
-        { name: 'judulBuku', align: 'center', label: 'Judul Buku', field: 'judulBuku', sortable: true },
-        { name: 'hargaBuku', label: 'Harga Buku', align: 'center', field: 'hargaBuku' },
+        { name: 'namaBarang', align: 'center', label: 'Nama Barang', field: 'namaBarang', sortable: true },
+        { name: 'hargaBarang', label: 'Harga Barang', align: 'center', field: 'hargaBarang' },
         { name: 'jumlahBeli', label: 'Jumlah Beli', align: 'center', field: 'jumlahBeli' },
         { name: 'total', label: 'Total', align: 'center', field: 'total' }
       ],
       data: [
         {
           kodeTransaksi: 'T0001',
-          namaPembeli: 'John Cena',
-          judulBuku: ' Pemrograman 3',
-          hargaBuku: '350000',
+          namaPembeli: 'Lestari',
+          namaBarang: ' Kaos Distro',
+          hargaBarang: '100000',
           jumlahBeli: '2',
-          total: '700000'
+          total: '200000'
+        },
+        {
+          kodeTransaksi: 'T0001',
+          namaPembeli: 'Ikbal',
+          namaBarang: ' Sepatu',
+          hargaBarang: '700000',
+          jumlahBeli: '2',
+          total: '1400000'
         },
         {
           kodeTransaksi: 'T0002',
-          namaPembeli: 'Antonio',
-          judulBuku: ' Prak Pemrograman 3',
-          hargaBuku: '400000',
+          namaPembeli: 'Trian',
+          namaBarang: ' Celana Jeans',
+          hargaBarang: '200000',
           jumlahBeli: '1',
-          total: '400000'
+          total: '200000'
         },
         {
           kodeTransaksi: 'T0003',
-          namaPembeli: 'Kevin Yu',
-          judulBuku: ' Pemrograman 4',
-          hargaBuku: '200000',
-          jumlahBeli: '3',
-          total: '600000'
+          namaPembeli: 'Kevin',
+          namaBarang: ' Gelang',
+          hargaBarang: '50000',
+          jumlahBeli: '2',
+          total: '100000'
         }
       ]
     }

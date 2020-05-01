@@ -1,15 +1,15 @@
 <template>
- <q-layout class="bg-blue-grey-1" view="hHh Lpr lFf">
+ <q-layout class="bg-light-blue-3" view="hHh Lpr lFf">
    <q-page-container>
      <q-page padding class="row items-center justify-center">
        <div class="row full-width">
          <div class="col-md-8 offset-md-2 col-xs-12 q-pl-md q-pr-md q-pt-sm">
-           <q-card flat class="bg-white text-black">
+           <q-card flat class="bg-white text-light-blue-14">
              <div class="row">
-               <div class="col-md-6 col-xs-12">
-                 <div class="row q-pt-md q-pb-md bg-teal-5">
-                   <div class="col-md-8 offset-2 col-xs-8">
-<q-img spinner-color="white" placeholder-src="statics/study.png" src="statics/study.png"></q-img>
+               <div class="col-md-6 col-xs-14">
+                 <div class="row q-pt-md q-pb-md bg-teal-11">
+                   <div class="col-md-10 offset-1 col-xs-10">
+                     <q-img spinner-color="white" placeholder-src="statics/LOGIN.jpg" src="statics/LOGIN.jpg"></q-img>
                    </div>
                  </div>
                </div>

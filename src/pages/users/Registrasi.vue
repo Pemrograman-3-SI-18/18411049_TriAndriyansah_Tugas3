@@ -1,5 +1,5 @@
 <template>
-  <q-layout class="bg-blue-grey-1" view="hHh Lpr lFf">
+  <q-layout class="bg-blue" view="hHh Lpr lFf">
     <q-page-container>
       <q-page padding class="row items-center justify-center">
         <div class="row full-width">

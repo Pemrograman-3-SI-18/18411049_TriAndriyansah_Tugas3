@@ -11,7 +11,8 @@
       >
 
         <template v-slot:top>
-          <q-btn color="teal" :disable="loading" label="Tambah data Buku" to="/inputdatabuku" />
+          <q-btn color="teal" :disable="loading" label="Tambah data Barang" to="/AdminByntq/InputDataBarang"/>
+          <q-btn color="red" :disable="loading" label="Hapus data Barang"  />
           <q-space />
           <q-input borderless dense debounce="300" color="primary" v-model="filter">
             <template v-slot:append>
@@ -35,34 +36,46 @@ export default {
         {
           name: 'desc',
           required: true,
-          label: 'Kode Buku',
+          label: 'Kode Barang',
           align: 'left',
-          field: row => row.kodeBuku,
+          field: row => row.kodeBarang,
           format: val => `${val}`,
           sortable: true
         },
-        { name: 'judulBuku', align: 'center', label: 'Judul Buku', field: 'judulBuku', sortable: true },
-        { name: 'penerbit', align: 'center', label: 'Penerbit', field: 'penerbit', sortable: true },
-        { name: 'pengarang', label: 'Pengarang', align: 'center', field: 'pengarang' },
-        { name: 'tahunTerbit', label: 'Tahun Terbit', align: 'center', field: 'tahunTerbit' },
-        { name: 'hargaBuku', label: 'Harga Buku', align: 'center', field: 'hargaBuku' }
+        { name: 'namaBarang', align: 'center', label: 'Nama Barang', field: 'namaBarang', sortable: true },
+        { name: 'jenisBarang', align: 'center', label: 'Jenis Barang', field: 'jenisBarang', sortable: true },
+        { name: 'hargaBarang', label: 'Harga Barang', align: 'center', field: 'hargaBarang' }
       ],
       data: [
         {
-          kodeBuku: 'B0001',
-          judulBuku: 'Pemrograman 3',
-          penerbit: 'Fakultas Ilmu Komputer',
-          pengarang: 'Ahmad Cucus S.Kom, M.Kom',
-          tahunTerbit: '2020',
-          hargaBuku: '350000'
+          kodeBarang: 'B001',
+          namaBarang: 'Kaos Distro',
+          jenisBarang: 'Kaos',
+          hargaBarang: '100000'
         },
         {
-          kodeBuku: 'B0002',
-          judulBuku: 'Prak Pemrograman 3',
-          penerbit: 'Fakultas Ilmu Komputer',
-          pengarang: 'Ahmad Cucus S.Kom, M.Kom',
-          tahunTerbit: '2020',
-          hargaBuku: '400000'
+          kodeBarang: 'G001',
+          namaBarang: 'Gelang',
+          jenisBarang: 'Gelang',
+          hargaBarang: '50000'
+        },
+        {
+          kodeBarang: 'S001',
+          namaBarang: 'Sepatu',
+          jenisBarang: 'Sepatu',
+          hargaBarang: '700000'
+        },
+        {
+          kodeBarang: 'K001',
+          namaBarang: 'Kemeja',
+          jenisBarang: 'Kemeja',
+          hargaBarang: '200000'
+        },
+        {
+          kodeBarang: 'C001',
+          namaBarang: 'Celana Jeans',
+          jenisBarang: 'Celana',
+          hargaBarang: '200000'
         }
 
       ]
